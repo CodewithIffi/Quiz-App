@@ -1,5 +1,11 @@
+/* #main {
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+} */
+
 .container {
-    max-width: 300px;
+    max-width: 400px;
     margin: 40px auto;
     padding: 20px;
     border: 1px solid #ddd;
@@ -16,21 +22,46 @@ form {
     flex-direction: column;
 }
 
-input[type="email"], input[type="password"] {
+input[type="name"],
+input[type="email"],
+input[type="password"] {
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-button[type="submit"] {
+/* button[type="submit"] {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+#register-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
-    background-color: #3e8e41;
+#register-btn:hover {
+    background-color: black;
+}
+
+#login-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: black;
 }

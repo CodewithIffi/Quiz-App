@@ -1,6 +1,7 @@
 // register.js
 
 const registerForm = document.getElementById('register-form');
+const nameInput = document.getElementById('full-name');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const confirmPasswordInput = document.getElementById('confirm-password');
@@ -8,24 +9,23 @@ const registerBtn = document.getElementById('register-btn');
 
 registerForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    const name = nameInput.value;
     const email = emailInput.value;
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
 
     if (password === confirmPassword) {
-        // Create new user object
         const user = {
+            name,
             email,
             password,
         };
 
-        // Get existing users from local storage
         const users = JSON.parse(localStorage.getItem('users')) || [];
 
-        // Add new user to the list
+
         users.push(user);
 
-        // Store users in local storage
         localStorage.setItem('users', JSON.stringify(users));
 
         console.log(`Registered new user with email ${email}`);
