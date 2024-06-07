@@ -10,16 +10,17 @@ loginForm.addEventListener('submit', (e) => {
     const email = emailInput.value;
     const password = passwordInput.value;
 
-   
+
     const users = JSON.parse(localStorage.getItem('users')) || [];
     const user = users.find((user) => user.email === email && user.password === password);
 
     if (user) {
         console.log(`Logged in successfully as ${email}`);
-        
+
         localStorage.setItem('loggedIn', true);
         localStorage.setItem('currentUser', JSON.stringify(user));
-    } else {
+        } else {
+        window.location('quiz.html');
         console.log('Invalid email or password');
     }
 });
