@@ -60,12 +60,14 @@ btn.addEventListener("click", () => {
 
   renderQuestion(questionsArr, div);
 });
-function hello(){
-  console.log("hello");
+
+// Submit Function 
+
+function hello() {
   const div = document.querySelector("#questions");
   div.innerHTML = `
     <h1>Result</h1>
-    <p>You scored ${result} out of ${totalMarks}.</p>
+    <h1>${result} out of ${totalMarks}.</h1>
   `;
 }
 
