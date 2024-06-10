@@ -1,4 +1,3 @@
-
 .container {
     max-width: 400px;
     margin: 40px auto;
@@ -51,4 +50,89 @@ input[type="password"] {
 
 #login-btn:hover {
     background-color: black;
+}
+
+#log {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    color: lightseagreen;
+}
+
+#reg {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    color: lightseagreen;
+}
+
+#quiz {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    color: lightseagreen;
+}
+#next {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: lightseagreen;
+}
+
+button {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: lightseagreen;
+}
+.res {
+    font-size: 8vw;
+    font-weight: 800;
+    text-align: center;
+    color: lightseagreen;
+}
+.result{
+    font-size: 6vw;
+    font-weight: 800;
+    text-align: center;
+
+}
+h4{
+    font-size: 5vw;
+    font-weight: 800;
+    text-align: center;
+}
+@media (max-width : 600px) {
+    #questions {
+        font-size: 5vw;
+
+    }
+
+    #next {
+        font-size: 5vw;
+        font-weight: 500;
+        color: lightseagreen;
+    }
+
+    button {
+        font-size: 5vw;
+        font-weight: 500;
+        color: lightseagreen;
+    }
+
+    .res {
+        font-size: 10vw;
+        font-weight: 800;
+        text-align: center;
+        color: lightseagreen;
+    }
+    .result{
+        font-size: 8    vw;
+        font-weight: 800;
+        text-align: center;
+    
+    }
+    h4{
+        font-size: 7vw;
+        font-weight: 600;
+    }
+
 }

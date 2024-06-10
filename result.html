@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="res">Result</h1>
+    <h1 class="result">Marks 100 / 100</h1>
+
+    <h4>Thank You For Attempting The Quiz</h4>
+
+
+    <script>
+
+        const result = JSON.parse(localStorage.getItem("result"))
+        const h1 = document.querySelector('.result');
+        h1.innerHTML = ` Marks ${result.result}/${result.totalMarks}`
+        console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -19,8 +19,11 @@ loginForm.addEventListener('submit', (e) => {
 
         localStorage.setItem('loggedIn', true);
         localStorage.setItem('currentUser', JSON.stringify(user));
-        } else {
-        window.location('quiz.html');
+
+
+
+        window.location.href = 'quiz.html';
+    } else {
         console.log('Invalid email or password');
     }
 });
