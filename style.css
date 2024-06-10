@@ -75,12 +75,14 @@ input[type="password"] {
 #next {
     font-size: 1.5vw;
     font-weight: 500;
+    border-radius: 10px;
     color: lightseagreen;
 }
 
 button {
     font-size: 1.5vw;
     font-weight: 500;
+    border-radius: 10px;
     color: lightseagreen;
 }
 .res {
@@ -99,6 +101,10 @@ h4{
     font-size: 5vw;
     font-weight: 800;
     text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 6vw;
 }
 @media (max-width : 600px) {
     #questions {
@@ -125,7 +131,7 @@ h4{
         color: lightseagreen;
     }
     .result{
-        font-size: 8    vw;
+        font-size: 8vw;
         font-weight: 800;
         text-align: center;
     
@@ -133,6 +139,10 @@ h4{
     h4{
         font-size: 7vw;
         font-weight: 600;
+    }
+    h1{
+        text-align: center;
+        font-size: 8vw;
     }
 
 }

@@ -63,12 +63,25 @@ btn.addEventListener("click", () => {
 
 // Submit Function 
 
+const submitButton = document.querySelector("#submit");
+submitButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  hello();
+});
+
 function hello() {
   const div = document.querySelector("#questions");
+  div.innerHTML += "";
   div.innerHTML = `
-    <h1>Result</h1>
-    <h1>${result} out of ${totalMarks}.</h1>
+    <h1 class="res">Result</h1>
+    <h1>${result} out of ${totalMarks}</h1>
+    <h4>Thank You For Attempting The Quiz</h4>
+
   `;
+  const nextButton = document.querySelector("#next");
+  const submitButton = document.querySelector("#submit");
+  nextButton.style.display = "none";
+  submitButton.style.display = "none";
 }
 
 
