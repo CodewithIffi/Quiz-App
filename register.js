@@ -34,7 +34,7 @@ registerForm.addEventListener('submit', (e) => {
             confirmButtonText: 'Login',
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = "login.html";
+                window.location.assign("./index.html");
             }
         });
 
