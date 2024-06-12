@@ -20,9 +20,19 @@ loginForm.addEventListener('submit', (e) => {
         localStorage.setItem('loggedIn', true);
         localStorage.setItem('currentUser', JSON.stringify(user));
 
+        Swal.fire({
+            title: 'Success!',
+            text: 'You have successfully logged in!',
+            icon: 'success',
+            confirmButtonText: 'Start Quiz',
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "quiz.html";
+            }
+          });
 
 
-        window.location.href = 'quiz.html';
+       
     } else {
         console.log('Invalid email or password');
     }

@@ -27,9 +27,20 @@ registerForm.addEventListener('submit', (e) => {
         users.push(user);
 
         localStorage.setItem('users', JSON.stringify(users));
+        Swal.fire({
+            title: 'Success!',
+            text: 'Your account registered successfully!',
+            icon: 'success',
+            confirmButtonText: 'Login',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = "login.html";
+            }
+        });
 
         console.log(`Registered new user with email ${email}`);
     } else {
         alert('Passwords do not match');
+
     }
 });
